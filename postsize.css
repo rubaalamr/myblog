@@ -1,0 +1,65 @@
+
+/* small size */
+@media (max-width: 769px){
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 270px 150px ;
+    grid-auto-rows: 200px 800px;
+    grid-gap: 15px;
+    grid-template-areas:
+    "boxtwo boxthree"
+    "boxone boxone";
+    justify-content: center;
+
+  }
+  .postbox {
+    background-color: #ffe6e6;
+    border-radius: 25px;
+  }
+
+  #box1 {
+   grid-area: boxone;
+   background-color: #f0f0f5;
+  }
+  .imgpost{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  h1, h2{
+    font-family: monospace;
+    padding: 10px;
+  }
+  .posttext{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 10px;
+    font-size: 13pt;
+    color: grey;
+    padding: 10px;
+  }
+  #box2 {
+   grid-area: boxtwo;
+  }
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  #box3 {
+   grid-area: boxthree;
+  }
+
+  .followlist{
+    list-style: none;
+    text-decoration: none;
+    font-size: 12pt;
+    color: grey;
+    font-family: monospace;
+  }
+  .followlist:hover{
+    color: black;
+  }
+
+}
